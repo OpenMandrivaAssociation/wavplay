@@ -1,5 +1,5 @@
 %define	version	1.4
-%define release	2mdk
+%define release	%mkrel 2
 
 Summary:	WAV file Play & Record applications
 Name:		wavplay
