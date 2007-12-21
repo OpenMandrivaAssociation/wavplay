@@ -10,6 +10,7 @@ Group:		Sound
 URL:		ftp://sunsite.unc.edu/pub/Linux/apps/sound/
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		wavplay-1.4-fix-compile.patch.bz2
+Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 %{name} package contains:
