@@ -1,5 +1,5 @@
 %define	version	1.4
-%define release	%mkrel 5
+%define release	%mkrel 6
 
 Summary:	WAV file Play & Record applications
 Name:		wavplay
