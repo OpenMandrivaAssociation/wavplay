@@ -4,7 +4,7 @@
 Summary:	WAV file Play & Record applications
 Name:		wavplay
 Version:	%{version}
-Release:	%{release}
+Release:	1
 License:	GPL
 Group:		Sound
 URL:		ftp://sunsite.unc.edu/pub/Linux/apps/sound/
