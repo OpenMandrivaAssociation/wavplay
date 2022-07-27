@@ -1,14 +1,11 @@
-%define	version	1.4
-%define release	7
-
 Summary:	WAV file Play & Record applications
 Name:		wavplay
-Version:	%{version}
+Version:	2.0
 Release:	1
 License:	GPL
 Group:		Sound
 URL:		ftp://sunsite.unc.edu/pub/Linux/apps/sound/
-Source:		%{name}-%{version}.tar.bz2
+Source:		https://sourceforge.net/projects/wavplay/files/Release%20Downloads/wavplay-%{version}.tar.gz
 Patch0:		wavplay-1.4-fix-compile.patch.bz2
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
