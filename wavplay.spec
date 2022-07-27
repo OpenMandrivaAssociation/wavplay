@@ -6,7 +6,6 @@ License:	GPL
 Group:		Sound
 URL:		ftp://sunsite.unc.edu/pub/Linux/apps/sound/
 Source:		https://sourceforge.net/projects/wavplay/files/Release%20Downloads/wavplay-%{version}.tar.gz
-#Patch0:		wavplay-1.4-fix-compile.patch.bz2
 
 BuildRequires:  motif-devel
 BuildRequires:  pkgconfig(xproto)
@@ -20,8 +19,6 @@ wavrec - samples the audio device and writes WAV file.
 
 %prep
 %setup -q
-#patch0 -p1 -b .fix-compile
-#chmod -R o+r .
 
 %build
 %configure
@@ -29,15 +26,14 @@ wavrec - samples the audio device and writes WAV file.
 
 %install
 %make_install
-#rm -rf %{buildroot}
-#install -m 0755 -D wavplay %{buildroot}%{_bindir}/wavplay
-#ln -s wavplay %{buildroot}%{_bindir}/wavrec
-#install -m 0644 -D wavplay.1 %{buildroot}%{_mandir}/man1/wavplay.1
+
 
 %files
 %doc COPYING README
-%attr(4511,root,root) %{_bindir}/wavplay
+%{_bindir}/wavplay*
+%{_bindir}/xltwavplay
 %{_bindir}/wavrec
+%{_datadir}/wavplay/wavplay.1
 %{_mandir}/man?/*
 
 
