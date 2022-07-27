@@ -34,12 +34,8 @@ wavrec - samples the audio device and writes WAV file.
 #ln -s wavplay %{buildroot}%{_bindir}/wavrec
 #install -m 0644 -D wavplay.1 %{buildroot}%{_mandir}/man1/wavplay.1
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
-%doc BUGS COPYING README
+%doc COPYING README
 %attr(4511,root,root) %{_bindir}/wavplay
 %{_bindir}/wavrec
 %{_mandir}/man?/*
