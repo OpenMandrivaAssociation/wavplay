@@ -9,6 +9,7 @@ Source:		https://sourceforge.net/projects/wavplay/files/Release%20Downloads/wavp
 #Patch0:		wavplay-1.4-fix-compile.patch.bz2
 
 BuildRequires:  pkgconfig(xproto)
+BuildRequires:  pkgconfig(xmu)
 
 %description
 %{name} package contains:
