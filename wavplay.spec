@@ -17,7 +17,7 @@ wavrec - samples the audio device and writes WAV file.
 
 %prep
 %setup -q
-%patch0 -p1 -b .fix-compile
+#patch0 -p1 -b .fix-compile
 chmod -R o+r .
 
 %build
