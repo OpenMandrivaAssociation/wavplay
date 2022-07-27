@@ -21,6 +21,7 @@ wavrec - samples the audio device and writes WAV file.
 #chmod -R o+r .
 
 %build
+%configure
 %make_build
 
 %install
