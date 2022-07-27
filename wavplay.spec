@@ -8,6 +8,7 @@ URL:		ftp://sunsite.unc.edu/pub/Linux/apps/sound/
 Source:		https://sourceforge.net/projects/wavplay/files/Release%20Downloads/wavplay-%{version}.tar.gz
 #Patch0:		wavplay-1.4-fix-compile.patch.bz2
 
+BuildRequires:  motif-devel
 BuildRequires:  pkgconfig(xproto)
 BuildRequires:  pkgconfig(xmu)
 
