@@ -7,6 +7,11 @@ Group:		Sound
 URL:		ftp://sunsite.unc.edu/pub/Linux/apps/sound/
 Source:		https://sourceforge.net/projects/wavplay/files/Release%20Downloads/wavplay-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  motif-devel
 BuildRequires:  pkgconfig(xproto)
 BuildRequires:  pkgconfig(xmu)
